@@ -1,0 +1,35 @@
+{
+  "name": "learning-mar-2019-learning-jquery-ui",
+  "version": "1.0.0",
+  "description": "code along with lynda.com course learning jquery ui",
+  "main": "gulpfile.js",
+  "scripts": {
+    "default": "gulp default",
+    "build": "gulp build",
+    "clean": "gulp clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robert-laws/learning-mar-2019-learning-jquery-ui.git"
+  },
+  "keywords": [
+    "jquery-ui"
+  ],
+  "author": "Robert Laws",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robert-laws/learning-mar-2019-learning-jquery-ui/issues"
+  },
+  "homepage": "https://github.com/robert-laws/learning-mar-2019-learning-jquery-ui#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^4.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
