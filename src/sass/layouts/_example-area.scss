@@ -62,3 +62,46 @@
     text-align: center;
   }
 }
+
+.dragDiv {
+  float: left;
+  background-color: rgba($color-secondary, 0.25);
+  border: 5px solid #555;
+  color: $color-white;
+
+  margin: 1rem;
+  padding: 0 1rem 0.5rem;
+  overflow: hidden;
+
+  width: 200px;
+  height: 140px;
+
+  p {
+    font-size: 12px;
+  }
+
+  h2 {
+    background-color: $color-primary;
+    color: $color-white;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    text-align: center;
+  }
+}
+
+#dropArea {
+  top: 200px;
+  float: right;
+  padding: 1rem;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #888;
+}
+
+.dragHighlight {
+  background-color: yellow;
+
+  h2 {
+    padding: 0.25rem;
+  }
+}
