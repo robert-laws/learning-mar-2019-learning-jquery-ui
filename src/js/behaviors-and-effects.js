@@ -65,3 +65,55 @@ $(document).ready(function() {
     }
   });
 });
+
+// animate color
+$(document).ready(function() {
+  $("#animate1").click(function(evt) {
+    $("#animateColor").animate({
+      backgroundColor: "red",
+      color: "white",
+      borderColor: "green"
+    }, 800)
+  })
+  $("#animate2").click(function(evt) {
+    $("#animateColor").animate({
+      backgroundColor: "white",
+      color: "black",
+      borderColor: "black"
+    }, 800)
+  })
+});
+
+// Hide and Show
+$(document).ready(function() {
+  $("#show1").click(function(evt) {
+    $("#hideShow").show("blind", 500);
+  })
+  $("#hide1").click(function(evt) {
+    $("#hideShow").hide("blind", 500);
+  })
+  $("#show2").click(function(evt) {
+    $("#hideShow").show("bounce", 500);
+  })
+  $("#hide2").click(function(evt) {
+    $("#hideShow").hide("bounce", 500);
+  })
+  $("#show3").click(function(evt) {
+    $("#hideShow").show("explode", 500);
+  })
+  $("#hide3").click(function(evt) {
+    $("#hideShow").hide("explode", 500);
+  })
+  $("#show4").click(function(evt) {
+    $("#hideShow").show("highlight", 500);
+  })
+  $("#hide4").click(function(evt) {
+    $("#hideShow").hide("highlight", 500);
+  })
+  $("#show5").click(function(evt) {
+    $("#hideShow").show("puff", 500);
+  })
+  $("#hide5").click(function(evt) {
+    $("#hideShow").hide("puff", 500);
+  })
+})
