@@ -225,3 +225,12 @@ $(document).ready(function(){
   }
 });
 
+// Tabs Control
+$(document).ready(function() {
+  $("#tabsControl1").tabs();
+
+  $("#tabsControl2").tabs({
+    heightStyle: "auto",
+    collapsible: true
+  });
+});
