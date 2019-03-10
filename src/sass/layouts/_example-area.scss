@@ -41,3 +41,24 @@
     }
   }
 }
+
+.resize {
+  float: left;
+  background-color: rgba($color-primary, 0.25);
+  color: $color-white;
+
+  margin: 1rem;
+  padding: 0.1rem 1rem 0.5rem;
+  overflow: hidden;
+
+  width: 150px;
+  height: 200px;
+
+  h2 {
+    background-color: $color-secondary;
+    color: $color-white;
+    font-size: 2rem;
+    padding: 0.2rem;
+    text-align: center;
+  }
+}

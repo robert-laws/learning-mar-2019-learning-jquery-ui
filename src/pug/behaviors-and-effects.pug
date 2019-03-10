@@ -1,0 +1,28 @@
+extends layouts/default.pug
+
+block content
+  main
+    h1 Behaviors and Effects
+
+      h6 Resize
+
+      p Resize an element using a handle to move the element in the vertical and horizontal direction.
+
+      +codeMulti('Javascript', '$("#resize1").resizable();')
+
+      section.example-area
+        h6 Code in Action - Example 1
+        article.example-area__samples
+          section.behaviors-one
+            div#resize1.resize
+              h2 Resize Div
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aliquam accusantium saepe quae, ducimus aspernatur!
+            div#resize2.resize
+              h2 Resize Div 2
+              p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, laboriosam! Ut tenetur fugit quisquam qui temporibus deserunt numquam eaque.
+            div#resize3.resize
+              h2 Resize Div 3
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero!
+            div#resize4.resize
+              h2 Resize Div 4
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut!
