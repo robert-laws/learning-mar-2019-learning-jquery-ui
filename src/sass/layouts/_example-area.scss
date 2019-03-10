@@ -11,6 +11,10 @@
     margin: 0 0 2rem;
   }
 
+  label {
+    font-size: $font-size-website-default;
+  }
+
   &__samples {
     // area for sample code
     padding: 0 3rem;

@@ -20,6 +20,24 @@ div.ui-slider {
   margin: 1rem 0 2rem;
 }
 
+div.ui-progressbar {
+  margin: 1rem 0 2rem;
+}
+
+section .ui-autocomplete-input {
+  margin: 1rem 0 2rem;
+}
+
+#progress3 div.ui-progressbar-value {
+  background-color: green;
+}
+
+.ui-autocomplete {
+  max-height: 100px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 span.ui-selectmenu-button {
   margin: 1rem 0 2rem;
 }

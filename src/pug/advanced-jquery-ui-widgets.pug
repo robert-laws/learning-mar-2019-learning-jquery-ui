@@ -1,0 +1,63 @@
+extends layouts/default.pug
+
+block content
+  main
+    h1 Advanced JQuery UI Widgets
+
+      h6 Progress Bar
+
+      p Shows the progress of some type of event in the browser.
+
+      +codeMulti('Javascript', '$("#progress1").progressbar({', '  value: 40', '});')
+
+      section.example-area
+        h6 Code in Action - Example 1
+        article.example-area__samples
+          section.advanced-widget-one
+            p Progressbar control 1
+            div#progress1.progressbar
+            p Progressbar control 2 - gives feedback upon completion
+            div#progress2.progressbar
+            button#increaseProgress2(style="margin: -1rem 0 2rem;") Increase Progress
+            p Progressbar control 3 - indeterminate
+            div#progress3.progressbar
+
+      h6 Autocomplete
+
+      p Helps to complete strings from a predefined list.
+
+      +codeMulti('Javascript', '$("#auto2").autocomplete({', '  source: fruitNames,', '  autoFocus: true', '});', '', 'var fruitNames = [', '  "Apple",', '  "Banana",', '  "Cantaloupe",', '  "Grape",', '  "Grapefruit",', '  "Lemon",', '  "Lime",', '  "Mandarin Orange",', '  "Orange",', '  "Watermelon"', ']')
+
+      section.example-area
+        h6 Code in Action - Example 2
+        article.example-area__samples
+          section.advanced-widget-one
+            p Autocomplete - Basic Setup
+            label Type the name of a fruit: 
+            input(type="text")#auto1
+            p Autocomplete - Advanced Setup
+            label Type the name of a vegetable: 
+            input(type="text")#auto2
+
+      h6 Dialog (Popup)
+
+      p A popup message that has extra features
+
+      +codeMulti('Javascript', '...')
+
+      section.example-area
+        h6 Code in Action - Example 3
+        article.example-area__samples
+          section.advanced-widget-one
+            p Dialog - Basic Setup
+            button#openDialog1 Open Dialog 1
+            #dialog1(title="Dialog Message")
+              p This is a dialog box message.
+            p Dialog - With Controls
+            button#openDialog2 Open Dialog 2
+            #dialog2(title="Dialog Message")
+              p This is a second dialog box message.
+            p Dialog - With Advanced Controls
+            button#openDialog3 Open Dialog 3
+            #dialog3(title="Dialog Message")
+              p This is a third dialog box message.
