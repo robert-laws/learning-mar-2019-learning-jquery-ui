@@ -196,4 +196,32 @@ $(document).ready(function() {
   $("#openDialog3").click(function() {
     $("#dialog3").dialog("open");
   });
-})
+});
+
+// datepicker
+$(document).ready(function(){
+  $("#datepick1").datepicker();
+
+  $("#datepick2").datepicker({
+    firstDay: 1,
+    showButtonPanel: true,
+    currentText: "Today",
+    closeText: "Close",
+    constrainInput: true,
+    minDate: 0,
+    maxDate: "+3Y",
+    changeMonth: true,
+    changeYear: true,
+    numberOfMonths: 3,
+    beforeShowDay: onBeforeShowDay
+  });
+
+  function onBeforeShowDay(theDate) {
+    if(theDate.getDay() == 0 || theDate.getDay() == 6) {
+      return [false, "", "Weekends Disabled"];
+    } else {
+      return [true, ""];
+    }
+  }
+});
+

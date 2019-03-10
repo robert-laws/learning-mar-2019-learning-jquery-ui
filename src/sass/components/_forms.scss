@@ -32,6 +32,10 @@ section .ui-autocomplete-input {
   background-color: green;
 }
 
+section .hasDatepicker {
+  margin: 1rem 0 2rem;
+}
+
 .ui-autocomplete {
   max-height: 100px;
   overflow-y: auto;
