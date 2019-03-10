@@ -18,10 +18,38 @@ block content
         h6 Code in Action - Example 1
         article.example-area__samples
           section.basic-widget-one
-            div
-              p Spinner - no arguments
-              input(type="text")#spin1
-              p Spinner - value argument
-              input(type="text")#spin2
-              p Spinner - object arguments and readonly
-              input(type="text" readonly)#spin3
+            p Spinner - no arguments
+            input(type="text")#spin1
+            p Spinner - value argument
+            input(type="text")#spin2
+            p Spinner - object arguments and readonly
+            input(type="text" readonly)#spin3
+
+      h6 Slider control
+
+      p The slider is a control that moves along an axis and runs between one value to another.
+
+      +codeMulti('Javascript', '$("#slide1").slider();')
+
+      +codeMulti('Javascript', '$(document).ready(function() {', '  $("#slide2").slider({', '    animate: 1000', '  });', '});')
+
+      +codeMulti('Javascript', '$(document).ready(function() {', '  $("#slide3").slider({', '    value: 25,', '    min: 0,', '    max: 200,', '    step: 25,', '    animate: 500,', '    slide: function(evt, elem) {', '      $("#amt").text(elem.value);', '    },', '    start: function(evt, elem) {', '      $("#amt").addClass("heavyText");', '    },', '    stop: function(evt, elem) {', '      $("#amt").removeClass("heavyText");', '    }', '  });', '  $("#amt").text($("#slide3").slider("value"));', '});')
+
+      +codeMulti('Javascript', '$(document).ready(function() {', '  $("#slide4").slider({', '    range: true,', '    min: 500,', '    max: 5000,', '    values: [1500, 3000],', '    slide: function(evt, elem) {', '      $("#val1").text(elem.values[0]);', '      $("#val2").text(elem.values[1]);', '    }', '  });', '  $("#val1").text($("#slide4").slider("values", 0));', '  $("#val2").text($("#slide4").slider("values", 1));', '});')
+
+      section.example-area
+        h6 Code in Action - Example 1
+        article.example-area__samples
+          section.basic-widget-two
+            p Slider - no arguments
+            div#slide1
+            p Slider - animate argument
+            div#slide2
+            p Slider - custom slider - value: 
+              span#amt ...
+            div#slide3
+            p Slider - range slider - values: 
+              span#val1 ...
+              |to 
+              span#val2 ...
+            div#slide4
