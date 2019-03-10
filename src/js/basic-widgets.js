@@ -65,3 +65,36 @@ $(document).ready(function() {
   $("#val1").text($("#slide4").slider("values", 0));
   $("#val2").text($("#slide4").slider("values", 1));
 });
+
+// select menu
+$(document).ready(function() {
+  $("#selectmenu1").selectmenu();
+});
+
+$(document).ready(function() {
+  $("#selectmenu2").selectmenu();
+});
+
+$(document).ready(function() {
+  $("#selectmenu3").selectmenu({
+    icons: { button: "ui-icon-lightbulb" }
+  }).selectmenu("menuWidget").addClass("fixedHeight");
+})
+
+// accordion control
+
+$(document).ready(function() {
+  $("#accordionControl1").accordion();
+
+  $("#accordionControl1").accordion({
+    collapsible: true,
+    event: "click mouseover"
+  })
+
+  $("#accordionControl1").accordion({
+    icons: {
+      header: "ui-icon-circle-triangle-e",
+      activeHeader: "ui-icon-circle-triangle-s"
+    }
+  })
+});

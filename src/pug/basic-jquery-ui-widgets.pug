@@ -38,7 +38,7 @@ block content
       +codeMulti('Javascript', '$(document).ready(function() {', '  $("#slide4").slider({', '    range: true,', '    min: 500,', '    max: 5000,', '    values: [1500, 3000],', '    slide: function(evt, elem) {', '      $("#val1").text(elem.values[0]);', '      $("#val2").text(elem.values[1]);', '    }', '  });', '  $("#val1").text($("#slide4").slider("values", 0));', '  $("#val2").text($("#slide4").slider("values", 1));', '});')
 
       section.example-area
-        h6 Code in Action - Example 1
+        h6 Code in Action - Example 2
         article.example-area__samples
           section.basic-widget-two
             p Slider - no arguments
@@ -53,3 +53,83 @@ block content
               |to 
               span#val2 ...
             div#slide4
+
+      h6 Select Menu control
+
+      p The select menu is a control that allows a user to select an option from a dropdown list.
+
+      +codeMulti('Javascript', '$("#selectmenu1").selectmenu();')
+
+      +codeMulti('Javascript', '$("#selectmenu1").selectmenu();')
+
+      +codeMulti('Javascript', '$("#selectmenu1").selectmenu({', '  icons: { button: "ui-icon-lightbulb" }', '}).selectmenu("menuWidget").addClass("fixedHeight");')
+
+      section.example-area
+        h6 Code in Action - Example 3
+        article.example-area__samples
+          section.basic-widget-three
+            p Select Menu - no arguments
+            div
+              select#selectmenu1
+                option Apple
+                option(selected) Grape
+                option Orange
+                option Banana
+                option Lemon
+                option Strawberry
+            p Select Menu - option group specified
+            div
+              select#selectmenu2
+                optgroup(label="Fruit")
+                  option Apple
+                  option Grape
+                  option Orange
+                optgroup(label="Vegetable")
+                  option Celery
+                  option Lettuce
+                  option Green Pepper
+            p Select Menu - long list limited sizing and altered button icon
+            div
+              select#selectmenu3
+                option 1
+                option 2
+                option 3
+                option 4
+                option 5
+                option 6
+                option 7
+                option 8
+                option 9
+                option 10
+                option 11
+                option 12
+                option 13
+                option 14
+                option 15
+                option 16
+                option 17
+                option 18
+                option 19
+                option 20
+
+      h6 Accordion control
+
+      p The accordion control will break up groups of information into more manageable viewing layouts.
+
+      +codeMulti('Javascript', '$("#accordionControl1").accordion();')
+
+      section.example-area
+        h6 Code in Action - Example 4
+        article.example-area__samples
+          section.basic-widget-four
+            p Accordion Control
+            div#accordionControl1
+              h3 Selection One
+              div
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cupiditate omnis maiores eum consequuntur, quod adipisci perspiciatis id aliquam. Illum illo consequatur iusto quia neque, aut labore alias. Iure, dignissimos?
+              h3 Selection Two
+              div
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem obcaecati corporis labore quod odit ratione tenetur deleniti voluptatem, maiores, provident quam expedita sint. Iure quam deleniti iusto.
+              h3 Selection Three
+              div
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, earum voluptatem soluta officia sunt necessitatibus. Eos numquam odio sunt culpa sapiente, quo unde recusandae, hic ex optio, id quod?
