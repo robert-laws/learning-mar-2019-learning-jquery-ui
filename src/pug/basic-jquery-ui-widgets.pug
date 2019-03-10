@@ -6,13 +6,22 @@ block content
 
       h6 Spinner control
 
-      p ...
+      p The spinner is a control attached to the textbox that increments numbers using up and down arrows.
 
-      +codeMulti('Javascript', '...')
+      +codeMulti('Javascript', '$("#spin1").spinner();')
+
+      +codeMulti('Javascript', '$("#spin2").spinner();', '$("#spin2").spinner("value", 1);')
+      
+      +codeMulti('Javascript', '$("#spin3").spinner({', '  min: 0,', '  max: 500', '  step: 10,', '  page: 10', '});', '$("#spin3").spinner("value", 50);')
 
       section.example-area
         h6 Code in Action - Example 1
         article.example-area__samples
           section.basic-widget-one
             div
-              p ...
+              p Spinner - no arguments
+              input(type="text")#spin1
+              p Spinner - value argument
+              input(type="text")#spin2
+              p Spinner - object arguments and readonly
+              input(type="text" readonly)#spin3
