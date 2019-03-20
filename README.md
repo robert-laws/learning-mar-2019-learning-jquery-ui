@@ -74,4 +74,36 @@ $("#accordionControl1").accordion();
 
 ## Advanced JQuery UI Widgets
 
+Advanced widgets include the [Progressbar](https://api.jqueryui.com/progressbar/), [Autocomplete](https://api.jqueryui.com/autocomplete/), [Dialog](https://api.jqueryui.com/dialog/), [Datepicker](https://api.jqueryui.com/datepicker/), and [Tabs](https://api.jqueryui.com/tabs/) controls.
+
+**Progressbar**
+
+```javascript
+$("#progress1").progressbar({
+  value: 40
+});
+```
+
+**Autocomplete**
+
+```javascript
+$("#autocomplete-input").autocomplete({
+  source: fruitNames,
+  autoFocus: true
+});
+
+var fruitNames = [
+  "Apple",
+  "Banana",
+  "Cantaloupe",
+  "Grape",
+  "Grapefruit",
+  "Lemon",
+  "Lime",
+  "Mandarin Orange",
+  "Orange",
+  "Watermelon"
+]
+```
+
 ## Behaviors and Effects

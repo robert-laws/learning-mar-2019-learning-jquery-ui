@@ -43,7 +43,7 @@ block content
 
       p A popup message that has extra features
 
-      +codeMulti('Javascript', '...')
+      +codeMulti('Javascript', '$("#dialog1").dialog({', '  autoOpen: false', '});', '$("#openDialog1").click(function() {', '  $("#dialog1").dialog("open");', '});')
 
       section.example-area
         h6 Code in Action - Example 3
@@ -66,7 +66,7 @@ block content
 
       p Versatile control for date selections.
 
-      +codeMulti('Javascript', '...')
+      +codeMulti('Javascript', '$("#datepick2").datepicker({', '  firstDay: 1,', '  showButtonPanel: true,', '  currentText: "Today"', '});')
 
       section.example-area
         h6 Code in Action - Example 4
@@ -83,7 +83,7 @@ block content
 
       p Tabbed tools to create panels to show content.
 
-      +codeMulti('Javascript', '...')
+      +codeMulti('Javascript', '$("#tabsControl2").tabs({', '  heightStyle: "auto",', '  collapsible: true', '});')
 
       section.example-area
         h6 Code in Action - Example 5
