@@ -107,3 +107,52 @@ var fruitNames = [
 ```
 
 ## Behaviors and Effects
+
+JQueryUI behaviors and effects help enhance DOM elements. Included behaviors and effects are [Resizeable](https://api.jqueryui.com/resizable/), [Drag and Drop](https://api.jqueryui.com/draggable/), [Animate Colors](https://api.jqueryui.com/color-animation/), and [Hide/Show Effects](https://api.jqueryui.com/hide/).
+
+**Resizeable**
+
+```javascript
+$("#resize1").resizable();
+```
+
+**Drag and Drop**
+
+```javascript
+$("#drag3").draggable({
+  handle: "h2"
+});
+
+$("#dropArea").droppable({
+  accept: "#drag3",
+  hoverClass: "dragHighlight",
+  tolerance: "pointer", // options - fit, pointer, intersect, touch
+  activate: function(evt, ui) {
+    $(this).find("h2").css("background-color", "cornsilk");
+  },
+  deactivate: function(evt, ui) {
+    $(this).find("h2").css("background-color", "");
+  },
+  drop: function(evt, ui) {
+    $(this).find("h2").text("Dropped...");
+    ui.draggable.find("h2").text("Item Dropped");
+  }
+});
+```
+
+**Animate Colors**
+
+```javascript
+$("#animateColor").animate({
+  backgroundColor: "red",
+  color: "white",
+  borderColor: "green"
+}, 800);
+```
+
+**Hide/Show**
+
+```javascript
+$("#hideShow").show("blind", 500);
+$("#hideShow").hide("blind", 500);
+```
